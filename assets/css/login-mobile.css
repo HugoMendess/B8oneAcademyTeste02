@@ -1,0 +1,54 @@
+
+/* Mobile responsive */
+
+@media  screen and (max-width: 768px){
+    
+    .main{
+        padding: 106px 16px;
+       
+    }
+    /* login */
+    .login{
+        max-width: min(100%, 328px);
+        height: 428px;
+        padding: 32px 16px 16px 16px;
+        border-radius: 8px;
+
+    }
+
+    .login__title{
+        font-size: 24px;
+        line-height: 32px;
+        margin: 8px 0px;
+        text-align: center;
+    }
+
+    .login__description{
+        margin: 0px 0px 24px 0px;
+        text-align: center;
+
+    }
+
+    .login__input{
+        max-width: min(100%, 296px);
+    }
+
+    .login__input-dropdow{
+        max-width: min(100%, 296px);
+    }
+
+    .login__input-div{
+        max-width: min(100%, 224px);
+    }
+
+   .login__options{
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+   }
+
+   .login__submit{
+    max-width: min(100%, 296px);
+    margin-top: 26px;
+   }
+}

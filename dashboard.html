@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard- b8One Academy</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/dashboard-style.css">
+    <link rel="stylesheet" href="assets/css/dashboard-mobyle.css">
+</head>
+
+<body>
+
+    <!-- Header do site  -->
+
+    <header class="header">
+        <svg class="header__menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12.0001H21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 6H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 17.9999H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <div class="header__block-left">
+            <div class="header__icon">
+                <p class="header__text">ME</p>
+            </div>
+
+            <span class="header__title">
+                Minha Empresa
+            </span>
+        </div>
+
+
+        <div class="header__block-right">
+            <div class="user-actions">
+                <div class="user-actions-info">
+                    <svg class="user-actions-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                            fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M9.09003 9.00002C9.32513 8.33169 9.78918 7.76813 10.4 7.40915C11.0108 7.05018 11.7289 6.91896 12.4272 7.03873C13.1255 7.15851 13.7588 7.52154 14.2151 8.06355C14.6714 8.60555 14.9211 9.29154 14.92 10C14.92 12 11.92 13 11.92 13"
+                            stroke="#142159" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 17H12.0094" stroke="#142159" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+
+                <div class="user-actions-alert">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.5 8.40096C17.5 6.96853 16.9205 5.59478 15.8891 4.5819C14.8576 3.56903 13.4587 3 12 3C10.5413 3 9.14236 3.56903 8.11091 4.5819C7.07946 5.59478 6.5 6.96853 6.5 8.40096C6.5 14.7021 3.75 16.5024 3.75 16.5024H20.25C20.25 16.5024 17.5 14.7021 17.5 8.40096Z"
+                            fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M13.5859 20.1028C13.4248 20.3756 13.1934 20.6021 12.9151 20.7595C12.6368 20.9169 12.3213 20.9998 12.0001 20.9998C11.6789 20.9998 11.3634 20.9169 11.085 20.7595C10.8067 20.6021 10.5754 20.3756 10.4142 20.1028"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span class="user-actions-alert__notification"></span>
+                </div>
+
+                <div class="user-actions-profile">
+                    <img src="assets/images/profile.png" alt="Foto de Perfil" class="user-actions-profile__img">
+
+                    <span class="user-actions-profile__name">
+                        Gustavo Silva
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- seção principal do site -->
+    <div class="main">
+        <asside class="sidebar">
+            <nav class="nav">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+
+                        <a href="#" class="nav__link-menu nav__link-menu-off">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 3.75H3.75V10.5H10.5V3.75Z" fill="#425DC7" stroke="#425DC7"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.25 3.75H13.5V10.5H20.25V3.75Z" fill="#CDD2EB" stroke="#CDD2EB"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.25 13.5H13.5V20.25H20.25V13.5Z" fill="#425DC7" stroke="#425DC7"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.5 13.5H3.75V20.25H10.5V13.5Z" fill="#CDD2EB" stroke="#CDD2EB"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+
+                            <span class="nav__option nav__option--modifer">
+
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav__item nav__item-height nav__item-one">
+
+                        <a href="#" class="nav__link-menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.087 2.02852C11.1249 0.927887 12.8751 0.927887 13.913 2.02852C14.5279 2.68061 15.4326 2.97456 16.3133 2.80843C17.7999 2.52803 19.2159 3.55679 19.4086 5.05724C19.5228 5.94621 20.0819 6.7158 20.8921 7.09907C22.2596 7.74599 22.8004 9.41058 22.0744 10.7377C21.6442 11.524 21.6442 12.4753 22.0744 13.2616C22.8004 14.5887 22.2596 16.2533 20.8921 16.9002C20.0819 17.2835 19.5228 18.0531 19.4086 18.9421C19.2159 20.4425 17.7999 21.4713 16.3133 21.1909C15.4326 21.0247 14.5279 21.3187 13.913 21.9708C12.8751 23.0714 11.1249 23.0714 10.087 21.9708C9.47213 21.3187 8.56741 21.0247 7.68666 21.1909C6.2001 21.4713 4.7841 20.4425 4.59141 18.9421C4.47724 18.0531 3.91809 17.2835 3.1079 16.9002C1.74043 16.2533 1.19956 14.5887 1.92562 13.2616C2.35579 12.4753 2.35579 11.524 1.92562 10.7377C1.19956 9.41058 1.74043 7.74599 3.1079 7.09907C3.91809 6.7158 4.47724 5.94621 4.59141 5.05724C4.7841 3.55679 6.2001 2.52803 7.68666 2.80843C8.56741 2.97456 9.47213 2.68061 10.087 2.02852Z"
+                                    fill="#CDD2EB" />
+                                <path
+                                    d="M8.46967 14.4694C8.17678 14.7623 8.17678 15.2371 8.46967 15.53C8.76256 15.8229 9.23744 15.8229 9.53033 15.53L8.46967 14.4694ZM15.5303 9.53002C15.8232 9.23713 15.8232 8.76226 15.5303 8.46936C15.2374 8.17647 14.7626 8.17647 14.4697 8.46936L15.5303 9.53002ZM9.53033 15.53L15.5303 9.53002L14.4697 8.46936L8.46967 14.4694L9.53033 15.53Z"
+                                    fill="#425DC7" />
+                                <path
+                                    d="M11.25 8.39982C11.25 9.31109 10.5113 10.0498 9.60001 10.0498C8.68874 10.0498 7.95001 9.31109 7.95001 8.39982C7.95001 7.48855 8.68874 6.74982 9.60001 6.74982C10.5113 6.74982 11.25 7.48855 11.25 8.39982Z"
+                                    stroke="#425DC7" stroke-width="1.5" />
+                                <path
+                                    d="M16.05 15.5996C16.05 16.5109 15.3113 17.2496 14.4 17.2496C13.4887 17.2496 12.75 16.5109 12.75 15.5996C12.75 14.6884 13.4887 13.9496 14.4 13.9496C15.3113 13.9496 16.05 14.6884 16.05 15.5996Z"
+                                    stroke="#425DC7" stroke-width="1.5" />
+                            </svg>
+
+
+                            <span class="nav__option nav__option-config">
+
+                            </span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.50024 9.74963L12.0002 14.2496L16.5002 9.74963" stroke="#333333"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+
+                        <ul class="nav__link-submenu nav__sub-one">
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Gerador de Link</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Vitrine Digital</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Carrinhos Compartilháveis</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Carrinhos Abandonados</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav__item">
+
+                        <a href="#" class="nav__link-menu nav__link-menu-off">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.625 2.99963L3.75 6.59958V19.1994C3.75 19.6768 3.95193 20.1346 4.31138 20.4722C4.67082 20.8097 5.15833 20.9994 5.66667 20.9994H19.0833C19.5917 20.9994 20.0792 20.8097 20.4386 20.4722C20.7981 20.1346 21 19.6768 21 19.1994V6.59958L18.125 2.99963H6.625Z"
+                                    fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.75 6.59979H21" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M16.2086 10.1994C16.2086 11.1549 15.8047 12.0713 15.0858 12.7469C14.3669 13.4225 13.3919 13.8021 12.3753 13.8021C11.3586 13.8021 10.3836 13.4225 9.66469 12.7469C8.9458 12.0713 8.54193 11.1549 8.54193 10.1994"
+                                    stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+
+                            <span class="nav__option nav__option--modifer">
+
+                            </span>
+
+                        </a>
+
+
+                        <ul class="nav__link-submenu">
+                            <li class="nav__link-item">
+                                <a href="#">Hubly Store</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#">Retailer Form</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#">Retailer Cluster</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#">Retailer Invoice</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav__item nav__item-height nav__item-two">
+
+                        <a href="#" class="nav__link-menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 21.9992C17.5228 21.9992 22 17.5221 22 11.9994C22 6.4766 17.5228 1.99951 12 1.99951C6.47715 1.99951 2 6.4766 2 11.9994C2 17.5221 6.47715 21.9992 12 21.9992Z"
+                                    fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M15 7.99939H11.1667C9.97 7.99939 9 8.89481 9 9.99936C9 11.104 9.97 11.9993 11.1667 11.9993H12.8333C14.03 11.9993 15 12.8947 15 13.9993C15 15.1039 14.03 15.9993 12.8333 15.9993H9"
+                                    stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 5.99951V7.99951" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 15.9993L12 17.9993" stroke="#425DC7" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+                            <span class="nav__option nav__option-config">
+
+                            </span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.50024 9.74963L12.0002 14.2496L16.5002 9.74963" stroke="#333333"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+
+                        <ul class="nav__link-submenu nav__sub-two">
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Pagamentos</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Comissões</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Bonus de Perfomance</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav__item nav__item-height nav__item-tree">
+
+
+                        <a href="#" class="nav__link-menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2386_3999)">
+                                    <path
+                                        d="M19.4 14.9993C19.2669 15.3009 19.2272 15.6355 19.286 15.9599C19.3448 16.2843 19.4995 16.5836 19.73 16.8193L19.79 16.8793C19.976 17.065 20.1235 17.2856 20.2241 17.5284C20.3248 17.7712 20.3766 18.0314 20.3766 18.2943C20.3766 18.5571 20.3248 18.8173 20.2241 19.0601C20.1235 19.3029 19.976 19.5235 19.79 19.7092C19.6043 19.8952 19.3837 20.0427 19.1409 20.1434C18.8981 20.244 18.6378 20.2958 18.375 20.2958C18.1122 20.2958 17.8519 20.244 17.6091 20.1434C17.3663 20.0427 17.1457 19.8952 16.96 19.7092L16.9 19.6492C16.6643 19.4187 16.365 19.2641 16.0406 19.2052C15.7162 19.1464 15.3816 19.1861 15.08 19.3192C14.7842 19.446 14.532 19.6565 14.3543 19.9248C14.1766 20.1931 14.0813 20.5074 14.08 20.8292V20.9992C14.08 21.5296 13.8693 22.0383 13.4942 22.4134C13.1191 22.7885 12.6104 22.9992 12.08 22.9992C11.5496 22.9992 11.0409 22.7885 10.6658 22.4134C10.2907 22.0383 10.08 21.5296 10.08 20.9992V20.9092C10.0723 20.5782 9.96512 20.2572 9.77251 19.9879C9.5799 19.7186 9.31074 19.5135 9 19.3992C8.69838 19.2661 8.36381 19.2264 8.03941 19.2852C7.71502 19.3441 7.41568 19.4987 7.18 19.7292L7.12 19.7892C6.93425 19.9752 6.71368 20.1227 6.47088 20.2234C6.22808 20.324 5.96783 20.3758 5.705 20.3758C5.44217 20.3758 5.18192 20.324 4.93912 20.2234C4.69632 20.1227 4.47575 19.9752 4.29 19.7892C4.10405 19.6035 3.95653 19.3829 3.85588 19.1401C3.75523 18.8973 3.70343 18.6371 3.70343 18.3743C3.70343 18.1114 3.75523 17.8512 3.85588 17.6084C3.95653 17.3656 4.10405 17.145 4.29 16.9593L4.35 16.8993C4.58054 16.6636 4.73519 16.3643 4.794 16.0399C4.85282 15.7155 4.81312 15.3809 4.68 15.0793C4.55324 14.7835 4.34276 14.5313 4.07447 14.3536C3.80618 14.176 3.49179 14.0806 3.17 14.0793H3C2.46957 14.0793 1.96086 13.8686 1.58579 13.4935C1.21071 13.1185 1 12.6098 1 12.0794C1 11.5489 1.21071 11.0402 1.58579 10.6652C1.96086 10.2901 2.46957 10.0794 3 10.0794H3.09C3.42099 10.0716 3.742 9.9645 4.0113 9.7719C4.28059 9.57929 4.48572 9.31013 4.6 8.9994C4.73312 8.69778 4.77282 8.36321 4.714 8.03882C4.65519 7.71443 4.50054 7.4151 4.27 7.17942L4.21 7.11942C4.02405 6.93368 3.87653 6.71311 3.77588 6.47031C3.67523 6.22752 3.62343 5.96727 3.62343 5.70444C3.62343 5.44162 3.67523 5.18137 3.77588 4.93857C3.87653 4.69578 4.02405 4.47521 4.21 4.28946C4.39575 4.10351 4.61632 3.956 4.85912 3.85535C5.10192 3.7547 5.36217 3.7029 5.625 3.7029C5.88783 3.7029 6.14808 3.7547 6.39088 3.85535C6.63368 3.956 6.85425 4.10351 7.04 4.28946L7.1 4.34946C7.33568 4.58 7.63502 4.73464 7.95941 4.79346C8.28381 4.85228 8.61838 4.81257 8.92 4.67946H9C9.29577 4.5527 9.54802 4.34222 9.72569 4.07393C9.90337 3.80565 9.99872 3.49126 10 3.16948V2.99948C10 2.46906 10.2107 1.96036 10.5858 1.58529C10.9609 1.21022 11.4696 0.999512 12 0.999512C12.5304 0.999512 13.0391 1.21022 13.4142 1.58529C13.7893 1.96036 14 2.46906 14 2.99948V3.08948C14.0013 3.41126 14.0966 3.72565 14.2743 3.99393C14.452 4.26222 14.7042 4.4727 15 4.59946C15.3016 4.73257 15.6362 4.77228 15.9606 4.71346C16.285 4.65464 16.5843 4.5 16.82 4.26946L16.88 4.20947C17.0657 4.02352 17.2863 3.876 17.5291 3.77535C17.7719 3.67471 18.0322 3.6229 18.295 3.6229C18.5578 3.6229 18.8181 3.67471 19.0609 3.77535C19.3037 3.876 19.5243 4.02352 19.71 4.20947C19.896 4.39521 20.0435 4.61578 20.1441 4.85858C20.2448 5.10137 20.2966 5.36162 20.2966 5.62445C20.2966 5.88727 20.2448 6.14752 20.1441 6.39032C20.0435 6.63311 19.896 6.85368 19.71 7.03942L19.65 7.09942C19.4195 7.3351 19.2648 7.63443 19.206 7.95882C19.1472 8.28321 19.1869 8.61779 19.32 8.9194V8.9994C19.4468 9.29516 19.6572 9.54741 19.9255 9.72508C20.1938 9.90275 20.5082 9.9981 20.83 9.99938H21C21.5304 9.99938 22.0391 10.2101 22.4142 10.5852C22.7893 10.9602 23 11.4689 23 11.9994C23 12.5298 22.7893 13.0385 22.4142 13.4135C22.0391 13.7886 21.5304 13.9993 21 13.9993H20.91C20.5882 14.0006 20.2738 14.096 20.0055 14.2736C19.7372 14.4513 19.5268 14.7035 19.4 14.9993Z"
+                                        fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 14.9994C13.6569 14.9994 15 13.6562 15 11.9994C15 10.3425 13.6569 8.99939 12 8.99939C10.3431 8.99939 9 10.3425 9 11.9994C9 13.6562 10.3431 14.9994 12 14.9994Z"
+                                        fill="#425DC7" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2386_3999">
+                                        <rect width="24" height="23.9997" fill="white"
+                                            transform="translate(0 -0.000488281)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+                            <span class="nav__option nav__option-config">
+
+
+                            </span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.50024 9.74963L12.0002 14.2496L16.5002 9.74963" stroke="#333333"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+
+                        <ul class="nav__link-submenu nav__sub-tree">
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Membros</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Gerais</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Customizações</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">White Label</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item-height nav__item-for">
+
+                        <a href="#" class="nav__link-menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 3.74915H3.75V10.4991H10.5V3.74915Z" fill="#425DC7" stroke="#425DC7"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.25 13.4991H13.5V20.2491H20.25V13.4991Z" fill="#425DC7" stroke="#425DC7"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.5 13.4991H3.75V20.2491H10.5V13.4991Z" fill="#CDD2EB" stroke="#CDD2EB"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.8447 10.2522C17.8447 10.6664 17.5089 11.0022 17.0947 11.0022C16.6805 11.0022 16.3447 10.6664 16.3447 10.2522L16.3447 7.74915H14C13.5858 7.74915 13.25 7.41336 13.25 6.99915C13.25 6.58493 13.5858 6.24915 14 6.24915H16.3447L16.3447 3.74915C16.3447 3.33493 16.6805 2.99915 17.0947 2.99915C17.5089 2.99915 17.8447 3.33493 17.8447 3.74915V6.24915H20.5031C20.9173 6.24915 21.2531 6.58493 21.2531 6.99915C21.2531 7.41336 20.9173 7.74915 20.5031 7.74915H17.8447V10.2522Z"
+                                    fill="#425DC7" />
+                            </svg>
+
+
+
+                            <span class="nav__option nav__option-config">
+
+                            </span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.50024 9.74963L12.0002 14.2496L16.5002 9.74963" stroke="#333333"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+
+                        <ul class="nav__link-submenu nav__sub-for">
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Hubly Store</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Retailer Form</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Retailer Cluster</a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a href="#" class="nav__link-text">Retailer Invoice</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+
+                </ul>
+            </nav>
+
+            <div class="card">
+                <img src="assets/images/card__image.png" alt="Imagem de um Foguete" class="card__image">
+
+                <p class="card__text">
+                    Libere novos recursos e decole seu negócio
+                </p>
+
+                <a href="#" class="card__link">
+                    Faça um upgrade!
+                </a>
+
+            </div>
+        </asside>
+
+        <main class="main-content">
+            <section class="main-tool">
+                <div class="main-tool__block">
+                    <svg class="main-tool__icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 1 15 1C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z"
+                            fill="#F1F2F9" stroke="#F1F2F9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M15 20.6V15" stroke="#425DC7" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M15 9.3996H15.012" stroke="#425DC7" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <h2 class="main-tool__title">
+                        🔥 Lançamento 🔥 Nova Ferramenta de Carrinhos Abandonados 😍
+                    </h2>
+                </div>
+
+
+                <a href="" class="main-tool__link">
+
+                    <span class="main-tool__link-text">
+                        Conheça a nova ferramenta
+                    </span>
+
+                </a>
+            </section>
+
+            <section class="main-actions">
+
+                <div class="main-actions__users">
+                    <svg class="main-actions__icon" width="16" height="8" viewBox="0 0 16 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.58579 1.41421L0 8H16L9.41421 1.41421C8.63317 0.633165 7.36684 0.633164 6.58579 1.41421Z"
+                            fill="white" />
+                    </svg>
+
+
+                    <div class="main-actions__block-user">
+                        <span class="main-actions__user">
+                            Olá, <span class="main-actions__user--bg">Henrique </span> 👋
+                        </span>
+
+                        <a href="#" class="main-actions__option">
+                            Minha Conta
+                        </a>
+
+
+                        <a href="#" class="main-actions__option">
+                            Sair
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="main-actions__help">
+
+                    <svg class="main-actions__icon-help" width="16" height="8" viewBox="0 0 16 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.58579 1.41421L0 8H16L9.41421 1.41421C8.63317 0.633165 7.36684 0.633164 6.58579 1.41421Z"
+                            fill="white" />
+                    </svg>
+
+                    <div class="main-actions__block-help">
+                        <a href="#" class="main-actions__link">
+                            Central de Ajuda
+                        </a>
+
+                        <a href="#" class="main-actions__link main-actions__link--border">
+                            Tutoriais
+                        </a>
+
+                        <a href="#" class="main-actions__link main-actions__link--bg">
+                            Falar com Especialista
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="main-actions__info">
+                    <svg class="main-actions__icon-info" width="16" height="8" viewBox="0 0 16 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.58579 1.41421L0 8H16L9.41421 1.41421C8.63317 0.633165 7.36684 0.633164 6.58579 1.41421Z"
+                            fill="white" />
+                    </svg>
+
+                    <div class="main-actions__block-info">
+
+                        <div class="main-actions__block-notification">
+                            <div class="main-actions__notifications">
+
+                                <span class="main-actions__emoji">
+                                    👋
+                                </span>
+
+                                <span class="main-actions__title">
+                                    Bem-vindo(a) a Hubly Retailer
+                                </span>
+
+
+                                <span class="main-actions__time">
+                                    10 min
+                                </span>
+
+                                <div class="main-actions__circle"></div>
+                            </div>
+
+                            <p class="main-actions__text">
+                                Para uma completa experiência com </br>
+                                a Retailer, precisamos que você siga </br>
+                                os passos abaixo.
+                            </p>
+
+                        </div>
+
+                        <div class="main-actions__block-checkbox">
+                            <div class="main-actions__check-options">
+                                <input type="checkbox" class="main-actions__input-check" checked>
+                                <p class="main-actions__description">
+                                    Cadastrar Organização
+                                </p>
+                            </div>
+
+                            <div class="main-actions__check-options main-actions__check-options--bottom">
+                                <input type="checkbox" class="main-actions__input-check">
+                                <p class="main-actions__description">
+                                    Convidar Revendedores
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="main-actions__block-reports">
+                            <div class="main-actions__block-details">
+                                <img src="assets/images/notification_image.png" alt="Gráfico Notificações"
+                                    class="main-actions__block-image">
+
+                                <span class="main-actions__block-title">
+                                    O seu Relatório Mensal está pronto!
+                                </span>
+
+                                <span class="main-actions__block-time">
+                                    12 min
+                                </span>
+                            </div>
+
+                            <a href="#" class="main-actions__block-text">
+                                Ir para Relatórios
+                            </a>
+                        </div>
+
+                        <a href="" class="main-actions__block-button">
+                            Marcar como Lidas
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="summary-data">
+                <h1 class="summary-data__title">
+                    Resumo de dados
+                </h1>
+
+                <div class="summary-data__buttons">
+                    <button class="summary-data__item summary-data__item--active">
+                        Últimos 7 dias
+                    </button>
+
+                    <button class="summary-data__item">
+                        Últimos 15 dias
+                    </button>
+
+                    <button class="summary-data__item">
+                        Último mês
+                    </button>
+
+                    <button class="summary-data__item">
+                        Último ano
+                    </button>
+
+                    <button type="date" class="summary-data__item summary-data__item-modifer">Personalizado
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00016 6.5L8.00016 9.5L11.0002 6.5" stroke="#333333" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <span class="summary-data__data">
+                    Exibindo dados do período <strong class="summary-data__data--modifer">1 de novembro à 8 de novembro
+                        de 2021</strong>
+                </span>
+            </section>
+
+         <section class="graphics">
+
+                <div class="graphics__block-content">  
+                    <div class="graphics__cards-container ">
+                        <div class="graphics__cards-head "> 
+                            <h2 class="graphics__title">
+                                <img src="assets/images/graphics__image.png" alt="Imagem de um gráfico"
+                                    class="main-graphics__image">
+                                Relatório geral
+                            </h2>
+    
+                            <div class="graphics__tab">
+                                <button class="graphics__button graphics__button--active"> Vendas</button>
+                                <button class="graphics__button"> Pedidos</button>
+                                <button class="graphics__button"> Revendedores</button>
+    
+                            </div>
+                        </div>
+    
+                        <ul class="graphics__cards graphics__tab-content ">
+                            <li class="grapchis__cards-item">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="12" fill="#F1F2F9" />
+                                    <path
+                                        d="M24 37.3333C31.3638 37.3333 37.3333 31.3638 37.3333 24C37.3333 16.6362 31.3638 10.6667 24 10.6667C16.6362 10.6667 10.6667 16.6362 10.6667 24C10.6667 31.3638 16.6362 37.3333 24 37.3333Z"
+                                        fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M28 18.6667H22.8889C21.2933 18.6667 20 19.8606 20 21.3333C20 22.8061 21.2933 24 22.8889 24H25.1111C26.7067 24 28 25.1938 28 26.6667C28 28.1395 26.7067 29.3333 25.1111 29.3333H20"
+                                        stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M24 16V18.6667" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M24 29.3333L24 32" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+    
+                                <div class="graphics__cards-details">
+                                    <p class="graphics__cards-title">Faturamento</p>
+                                    <span class="graphics__cards-value grapchis__cards-revenues"></span>
+                                </div>
+                            </li>
+    
+                            <li class="grapchis__cards-item">
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.666656" width="48" height="48" rx="12" fill="#F1F2F9" />
+                                    <path
+                                        d="M17.5 12L13.6667 16.8V33.6C13.6667 34.2365 13.9359 34.847 14.4152 35.2971C14.8944 35.7471 15.5444 36 16.2222 36H34.1111C34.7889 36 35.4389 35.7471 35.9182 35.2971C36.3974 34.847 36.6667 34.2365 36.6667 33.6V16.8L32.8333 12H17.5Z"
+                                        fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M13.6667 16.8002H36.6667" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M30.2781 21.5999C30.2781 22.8739 29.7396 24.0957 28.7811 24.9965C27.8226 25.8974 26.5226 26.4035 25.167 26.4035C23.8115 26.4035 22.5114 25.8974 21.5529 24.9965C20.5944 24.0957 20.0559 22.8739 20.0559 21.5999"
+                                        stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+    
+    
+                                <div class="graphics__cards-details">
+                                    <p class="graphics__cards-title">Vendas totais</p>
+                                    <span class="graphics__cards-value grapchis__cards-totalSales"></span>
+                                </div>
+                            </li>
+    
+    
+                            <li class="grapchis__cards-item">
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.333313" width="48" height="48" rx="12" fill="#F1F2F9" />
+                                    <path
+                                        d="M37.8577 27.5374L27.8846 37.5105C27.6262 37.7691 27.3194 37.9743 26.9817 38.1143C26.644 38.2543 26.282 38.3264 25.9164 38.3264C25.5508 38.3264 25.1888 38.2543 24.8511 38.1143C24.5134 37.9743 24.2066 37.7691 23.9482 37.5105L12.5866 26.1621C12.211 25.7869 12 25.2779 12 24.747V13.6667C12 12.5621 12.8954 11.6667 14 11.6667H25.081C25.6114 11.6667 26.1202 11.8774 26.4952 12.2524L37.8577 23.6149C38.3758 24.1361 38.6666 24.8412 38.6666 25.5761C38.6666 26.3111 38.3758 27.0161 37.8577 27.5374Z"
+                                        fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M20 19.6667H20.0133" stroke="#425DC7" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+    
+    
+                                <div class="graphics__cards-details">
+                                    <p class="graphics__cards-title">Ticket médio</p>
+                                    <span class="graphics__cards-value grapchis__cards-averageTicket"></span>
+                                </div>
+                            </li>
+                        </ul> 
+
+                        <select name="options" class="graphics__options-list">
+                            <option value="1" class="insights-block-pags__item" selected>
+                                <span class="graphics__options-text">mostrar</span> todos os revendedores
+                            </option>
+
+                            <option value="2" class="insights-block-pags__item">
+                                1
+                            </option>
+
+                            <option value="3" class="insights-block-pags__item">
+                                2
+                            </option>
+
+                            <option value="4" class="insights-block-pags__item">
+                                3
+                            </option>
+
+                            <option value="5" class="insights-block-pags__item">
+                                4
+                            </option>
+
+                            <option value="6" class="insights-block-pags__item">
+                                5
+                            </option>
+
+                            <option value="7" class="insights-block-pags__item">
+                                6
+                            </option>
+                        </select>
+                        
+                    </div>
+    
+                    <div class="graphics__chart-block">
+                        <canvas id="grapchis__chart" class="graphics__tab-content" height="196"></canvas>
+                        <canvas id="grapchis__chart-Line" class="graphics__tab-content" height="323"></canvas>
+                        <canvas id="grapchis__chart-revenue" class="graphics__tav-content" height="200"></canvas>
+                    </div>
+                </div>  
+
+                <div class="graphics__block-ranking">
+                    <h3 class="graphics__ranking-title">
+                        <img src="assets/images/graphics__ranking.png" alt="Icone do Ranking" class="graphics__ranking-image">
+                        <span class="graphics__title-text">
+                            Ranking de revendedores
+                        </span>
+                    </h3>
+
+                    <div class="graphics__ranking-content">
+                        <ul class="graphics__ranking-list">
+                      
+                             
+                        </ul>
+                        
+                        <div class="graphics__block-button">
+                            <button class="graphics__ranking-btn">
+                                <span class="graphics__ranking-text">
+                                    Ver todos
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="insights">
+                <h2 class="insights__title">
+                    <img src="assets/images/insights__image.png" alt="Icon" class="insights__image">
+                    Insights
+                </h2>
+
+
+
+                <div class="insights-products">
+                    <h3 class="insights__title-product">
+                        Produtos mais vendidos
+                    </h3>
+
+                    <ul class="insights-list">
+                        <li class="insights-list__row-details insights-list__row--border">
+                            <div class="insights-list__details-fluid">
+                                <span class="insights-list__fluid-text">
+                                    Produtos
+                                </span>
+                            </div>
+
+                            <div class="insights-list__details-fixed">
+                                <span class="insights-list__fixed-left">
+                                    Número do Pedido
+                                </span>
+
+                                <span class="insights-list__fixed-right">
+                                    Departamento
+                                </span>
+
+                                <span class="insights-list__fixed-right">
+                                    Valor
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="insights-block-pags">
+                        <div class="insights-block-pags__total">
+                            <span class="insights-block-pags__show">
+                                Exibindo
+                            </span>
+
+                            <select name="options" class="insights-block-pags__options">
+                                <option value="1" class="insights-block-pags__item">1</option>
+                                <option value="2" class="insights-block-pags__item">2</option>
+                                <option value="3" class="insights-block-pags__item">3</option>
+                                <option value="4" class="insights-block-pags__item">4</option>
+                                <option value="5" class="insights-block-pags__item">5</option>
+                                <option value="6" class="insights-block-pags__item">6</option>
+                                <option value="7" class="insights-block-pags__item">7</option>
+                                <option value="8" class="insights-block-pags__item">8</option>
+                                <option value="9" class="insights-block-pags__item">9</option>
+                                <option value="10" class="insights-block-pags__item">10</option>
+                            </select>
+
+                            <span class="insights-block-pags__show">
+                                produtos por página
+                            </span>
+                        </div>
+
+                        <ul class="insights-block-pags__list">
+                            <li class="insights-block-pags__item insights-block-pags__item--bg">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5L6 8L9 11" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </li>
+
+                            <li class="insights-block-pags__list-item insights-block-pags__list-item--active">
+                                1
+                            </li>
+
+                            <li class="insights-block-pags__list-item">
+                                2
+                            </li>
+
+                            <li class="insights-block-pags__list-item">
+                                3
+                            </li>
+
+                            <li class="insights-block-pags__item insights-block-pags__item--bg">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99988 11L9.99988 8L6.99988 5" stroke="#425DC7" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="overlay">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/grafico-dashboard.js"></script>
+    <script src="scripts/dashboard.js"></script>
+</body>
+
+</html>
